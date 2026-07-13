@@ -252,13 +252,13 @@ Based on the analysis, the following recommendations can be considered:
 
 ### Dashboard Page 1
 
-![Dashboard Page 1](Dashboard Attrition Factors.png)
+![Dashboard Page 1](Dashboard Overview.png)
 
 ---
 
 ### Dashboard Page 2
 
-![Dashboard Page 2](Dashboard Overview.png)
+![Dashboard Page 2](Dashboard Attrition Factors.png)
 
 ---
 
