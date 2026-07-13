@@ -34,7 +34,7 @@ The main objectives of this analysis are:
 |------|-------------|
 | Dataset | HR Employee Attrition |
 | Total Records | 1,470 |
-| Total Columns | 43 |
+| Total Columns | 38 |
 | Data Source | IBM HR Analytics Employee Attrition (Kaggle) |
 
 ---
@@ -45,22 +45,42 @@ The main objectives of this analysis are:
 |----------|-------------|
 | EmpID | Employee Identifier |
 | Age | Employee Age |
-| Department | Employee Department |
-| JobRole | Employee Job Position |
+| AgeGroup | Employee age category |
 | Attrition | Employee Status (Yes / No) |
+| BusinessTravel | Business Travel Frequency |
+| DailyRate | Employee's daily salary rate |
+| Department | Employee Department |
+| DistanceFromHome | Distance Between Home and Office |
+| Education | Employee's highest education level represented by a numeric code |
+| EducationField | Field of study or educational background of the employee |
+| EmployeeNumber | Unique employee number assigned by the company |
+| EnvironmentSatisfaction | Work Environment Satisfaction |
 | Gender | Employee Gender |
+| HourlyRate | Employee's hourly wage rate |
+| JobInvolvement | Job Involvement Level |
+| JobLevel | Employee's job level or organizational rank |
+| JobRole | Employee Job Position |
+| JobSatisfaction | Job Satisfaction Rating |
 | MaritalStatus | Marital Status |
 | MonthlyIncome | Monthly Income |
+| SalarySlab | Salary category based on monthly income |
+| MonthlyRate | Employee's monthly pay rate |
+| NumCompaniesWorked | Number of companies the employee has worked for before joining the current company. |
+| Over18 | Indicates whether the employee is over 18 years old |
 | OverTime | Overtime Status |
-| BusinessTravel | Business Travel Frequency |
-| WorkLifeBalance | Work-Life Balance Rating |
-| JobSatisfaction | Job Satisfaction Rating |
-| EnvironmentSatisfaction | Work Environment Satisfaction |
+| PercentSalaryHike | Percentage increase in the employee's salary |
+| PerformanceRating | Employee's performance evaluation rating |
 | RelationshipSatisfaction | Relationship Satisfaction |
-| JobInvolvement | Job Involvement Level |
-| DistanceFromHome | Distance Between Home and Office |
+| RelationshipSatisfaction | Relationship Satisfaction |
+| StandardHours | Standard working hours assigned to employees |
+| StockOptionLevel | Employee's stock option benefit level |
+| TotalWorkingYears | Total years of professional work experience |
+| TrainingTimesLastYear | Number of training sessions attended in the previous year |
+| WorkLifeBalance | Work-Life Balance Rating |
 | YearsAtCompany | Employee Tenure |
+| YearsInCurrentRole | Number of years the employee has been in their current job role |
 | YearsSinceLastPromotion | Years Since Last Promotion |
+| YearsWithCurrManager | Number of years the employee has worked with their current manager |
 
 > **Note:** Only the most relevant columns are listed.
 
@@ -94,8 +114,6 @@ Additional columns were created to enhance business analysis.
 
 | Feature | Description |
 |----------|-------------|
-| AgeGroup | Employee age category |
-| SalarySlab | Salary category |
 | ExperienceCategory | Employee experience category |
 | TenureCategory | Employee tenure category |
 | PromotionStatus | Promotion category |
@@ -147,6 +165,7 @@ The analysis was conducted through several business questions.
 - Job Role × Overtime
 - Department × Work-Life Balance
 - Salary × Promotion
+- Department x Job Role
 - Job Role × Salary
 
 ---
@@ -172,8 +191,7 @@ Displays overall employee attrition statistics and identifies employee groups wi
 - Top 5 Job Roles by Attrition
 - Attrition by Age Group
 - Attrition by Salary
-- Attrition by Experience
-- Attrition by Promotion Status
+- Attrition by Gender
 
 ---
 
@@ -190,7 +208,7 @@ Analyzes factors associated with employee resignation.
 - Attrition by Job Satisfaction
 - Attrition by Environment Satisfaction
 - Attrition by Relationship Satisfaction
-- Attrition by Job Involvement
+- Attrition by Promotion
 
 ---
 
@@ -250,42 +268,14 @@ Based on the analysis, the following recommendations can be considered:
 
 This project demonstrates end-to-end data analytics skills including:
 
-- SQL Data Cleaning
 - SQL Data Validation
+- SQL Data Cleaning
 - SQL Feature Engineering
 - Exploratory Data Analysis (EDA)
 - Data Visualization
 - Business Insight Generation
 - Business Recommendation
 - Dashboard Development
-
----
-
-## Repository Structure
-
-```text
-hr-employee-attrition-analysis/
-│
-├── dataset/
-│   ├── employee_attrition_raw.csv
-│   └── employee_attrition_clean.csv
-│
-├── sql/
-│   ├── 01_data_cleaning.sql
-│   ├── 02_feature_engineering.sql
-│   └── 03_exploratory_data_analysis.sql
-│
-├── dashboard/
-│   ├── HR_Employee_Attrition.pbix
-│   ├── Dashboard_Page1.png
-│   └── Dashboard_Page2.png
-│
-├── images/
-│   ├── dashboard_page1.png
-│   └── dashboard_page2.png
-│
-└── README.md
-```
 
 ---
 
