@@ -82,8 +82,6 @@ The main objectives of this analysis are:
 | YearsSinceLastPromotion | Years Since Last Promotion |
 | YearsWithCurrManager | Number of years the employee has worked with their current manager |
 
-> **Note:** Only the most relevant columns are listed.
-
 ---
 
 ## Tools Used
